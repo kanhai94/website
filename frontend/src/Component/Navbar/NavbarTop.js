@@ -23,7 +23,8 @@ function NavbarTop() {
         {/* kkkkkkaaa */}
         {/* Flex container for the right side content */}
         <Flex alignItems={'center'} mt={1}>
-          {/* Email icon and text */}
+          {/* Email icon and text kkk
+           */}
           <Icon as={MdEmail} style={{ height: 20, width: 20, marginRight: "5px", color: "white" }}/> 
           <span style={{ marginRight: "5px", color: "white", fontSize: "14px" }}>kanhai94@gmail.com</span>
           
