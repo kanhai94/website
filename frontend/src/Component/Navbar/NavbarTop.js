@@ -20,7 +20,7 @@ function NavbarTop() {
             <TfiWorld color='red' style={{ width: '14px', height: "14px" }}/><span style={{color: "white",marginLeft:"10px"}}>24/7 Support Services</span>
           {/* </Text> */}
         </Flex>
-        
+        {/* kkkkkkaaa */}
         {/* Flex container for the right side content */}
         <Flex alignItems={'center'} mt={1}>
           {/* Email icon and text */}
