@@ -2,9 +2,9 @@
 import React from 'react';
 
 import {
-  Text, Menu, MenuItem, MenuButton, MenuList,  Image,useDisclosure} from '@chakra-ui/react'; // Importing Chakra UI components
+  Text, Menu, MenuItem, MenuButton, MenuList,useDisclosure} from '@chakra-ui/react'; // Importing Chakra UI components
 
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+// import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
 
 
 function Dropdown() {
@@ -20,13 +20,20 @@ function Dropdown() {
       p={9}
       pl={2}
       pr={2}
-    >
-      Paralegal Services
+    > 
+Area of Practice
     </MenuButton>
+
     <MenuList onMouseEnter={onOpen} bg="black" color="white" borderRadius={0} mt={-2} onMouseLeave={onClose} cursor={"pointer"}>
-      <MenuItem bg="black" color="white">Litigation Support</MenuItem>
-      <MenuItem bg="black" color="white">Contract Management</MenuItem>
-      <MenuItem bg="black" color="white">Legal Research</MenuItem>
+      <MenuItem bg="black" color="white">Personal Injury Law</MenuItem>
+      <MenuItem bg="black" color="white">Immigration Law</MenuItem>
+      <MenuItem bg="black" color="white">Real Estate Law</MenuItem>
+      <MenuItem bg="black" color="white">Employment Law</MenuItem>
+      <MenuItem bg="black" color="white">Mass Torts</MenuItem>
+      <MenuItem bg="black" color="white">Worker’s Compensation</MenuItem>
+      <MenuItem bg="black" color="white">Bankruptcy & Foreclosure</MenuItem>
+
+
     </MenuList>
   </Menu>
   )

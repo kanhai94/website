@@ -3,7 +3,7 @@ import Dropdown from './Dropdown';
 import DropDownThree from './DropDownThree';
 import DropDownTwo from './DropDownTwo'
 import {
-  Text, Menu, MenuItem, Flex, Box, MenuButton, MenuList,  Image} from '@chakra-ui/react'; // Importing Chakra UI components
+  Text, Flex, Box,  Image} from '@chakra-ui/react'; // Importing Chakra UI components
 
 import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
 
@@ -32,13 +32,13 @@ function NavbarTopFirst() {
           <Link to="/about" style={{ color: '#000000', textDecoration: 'none' }}>About</Link>
            {
             [1,2,3].map((item)=>{
-             if(item ==1){
+             if(item ===1){
               return <Dropdown/>
              }
-             if(item ==2){
+             if(item ===2){
               return <DropDownTwo/>
              }
-             if(item ==3){
+             if(item ===3){
               return <DropDownThree/>
              }
             })

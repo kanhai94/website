@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Flex, Box } from '@chakra-ui/react'; // Importing Chakra UI components
+import { Flex, Box } from '@chakra-ui/react'; // Importing Chakra UI components
 import { SocialIcon } from 'react-social-icons'; // Importing SocialIcon component
 import { Icon } from '@chakra-ui/react'; // Importing Icon component
 import { MdEmail, MdPhone } from 'react-icons/md'; // Importing MdEmail and MdPhone icons
