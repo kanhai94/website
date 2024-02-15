@@ -12,7 +12,7 @@ function NavbarTopFirst() {
   
   return (
     // Box component to contain the navbar with specified styling
-    <Box fontSize={"14px"} backgroundColor="#00f0f1" width="100%">
+    <Box fontSize={"14px"} backgroundColor="#white" width="100%">
 
       <Flex justifyContent="space-between" t={10} maxWidth={'80%'} mx="auto" alignItems={'center'}>
         {/* Logo */}
