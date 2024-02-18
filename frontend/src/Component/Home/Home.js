@@ -2,7 +2,8 @@ import React from 'react'
 import {Box,useDisclosure} from '@chakra-ui/react'
 import NavbarTop  from '../Navbar/NavbarTop'
 import NavbarTopFirst  from '../Navbar/NavbarTopFirst'
-import HeaderFirst from '../Header/index'
+import Header from '../Header/HeaderFirst'
+import HeaderSecond from'../Header/HeaderSecond'
 
 
 
@@ -10,9 +11,11 @@ function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
+      {/* components */}
  <NavbarTop/> 
  <NavbarTopFirst/>
- <HeaderFirst/>
+ <Header/>
+<HeaderSecond/>
   
     </Box>
   )

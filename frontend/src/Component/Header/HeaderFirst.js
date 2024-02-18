@@ -9,8 +9,8 @@ const divStyle = {
   alignItems: "center",
   // justifyContent: 'center',
   backgroundSize: "cover",
-  height: "400px",
-  position: "relative",
+  height: "450px",
+  position: "relative", 
 };
 
 const slideImages = [
