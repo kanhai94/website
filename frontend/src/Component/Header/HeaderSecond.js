@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Box, Button, Text, Flex, Image, Center } from "@chakra-ui/react";
+import { Box, Button, Text, Flex, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom"; // Import Link component
-import { version } from "mongoose";
 
 const HeaderSecond = () => {
   const img = "./lineImage.png";
@@ -51,9 +50,13 @@ const HeaderSecond = () => {
           position: "absolute",
           left: "50%",
           transform: "translateX(-50%)", // Center the line horizontally
-          top: "40%", // Center the line vertically
+          top: "40%", // Position the image vertically
+          left: "50%",
+          transform: "translateX(-50%)", // Center the image horizontally
+          borderRadius: "3%", // Make the image appear rounded
+
         }}
-      />
+        />
       {/* <Box mt={10}> */}
       <Link to="/appointment">
         <Button
@@ -66,8 +69,11 @@ const HeaderSecond = () => {
         >
           Start a Free Trial
         </Button>
+        
         {/* */}
+    
       </Link>
+    
       {/* </Box> */}
       <Text
         style={{
@@ -88,71 +94,3 @@ const HeaderSecond = () => {
 };
 
 export default HeaderSecond;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Device version code
-// import React, { useState } from "react";
-// import { Box, Button, Text, Flex, Image, Center } from "@chakra-ui/react";
-// import { Link } from "react-router-dom"; // Import Link component
-
-// const HeaderSecond = () => {
-//   const img = "./lineImage.png";
-//   const message = "Welcome to Kanhai Legal - Virtual Legal Assistant";
-//   const secondMessage = "Professional. Fast. Quality";
-//   const thirdMessage =
-//     "Providing a complete set of legal and paralegal services to meet the objectives and needs of attorneys and law firms based in the United States. Our legal professionals understand and completely follow the notion that both intricate and monotonous legal services can be delivered more effectively with scalable, repeatable, well-managed process methodologies.";
-  
-//   return (
-//     <Box ml={{ base: 0, md: 28 }} textAlign="center">
-//       {/* Main message */}
-//       <Text fontSize={{ base: "24px", md: "35px" }} fontWeight="bold" mt={{ base: "50px", md: "70px" }}>
-//         {message}
-//       </Text>
-      
-//       {/* Secondary message */}
-//       <Text fontSize={{ base: "16px", md: "18px" }} color="#26252c" lineHeight={{ base: "25px", md: "35px" }} mt="16px">
-//         {secondMessage}
-//       </Text>
-      
-//       {/* Image */}
-//       <Center mt="40px">
-//         <Image boxSize="3px" objectFit="cover" src={img} alt="line logo" />
-//       </Center>
-      
-//       {/* Button */}
-//       <Center mt="40px">
-//         <Link to="/appointment">
-//           <Button colorScheme="teal" size="sm">
-//             Start a Free Trial
-//           </Button>
-//         </Link>
-//       </Center>
-      
-//       {/* Third message */}
-//       <Text 
-//         fontSize="15px" 
-//         fontStyle="italic" 
-//         fontWeight="normal" 
-//         mt="10px" 
-//         mx="auto" 
-//         maxWidth="800px"
-//       >
-//         {thirdMessage}
-//       </Text>
-//     </Box>
-//   );
-// };
-
-// export default HeaderSecond;
