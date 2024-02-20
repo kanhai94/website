@@ -1,21 +1,33 @@
 import React from "react";
-import { Box, useDisclosure } from "@chakra-ui/react";
+import { Box, Center, useDisclosure } from "@chakra-ui/react";
 import NavbarTop from "../Navbar/NavbarTop";
 import NavbarTopFirst from "../Navbar/NavbarTopFirst";
 import Header from "../Header/HeaderFirst";
-import HeaderSecond from "../Header/HeaderSecond";
+import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
+import RemarksComp from "../RemarksComp/RemarksComp";
+import Twocards from "../Twocards/Twocards";
 
 function Home() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
       {/* components */}
       <NavbarTop />
       <NavbarTopFirst />
       <Header />
-      <HeaderSecond />
-      <CardFirst />
+      <Box w="90%" ml='auto' mr="auto">
+        <HeaderSecond />
+       <CardFirst />
+        <RemarksComp/>
+      </Box>
+      <Box bg="green">
+        {/* <Center> */}
+        {/* <Twocards/> */}
+
+        {/* </Cente r> */}
+
+      </Box>
+
     </Box>
   );
 }

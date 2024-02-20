@@ -9,7 +9,7 @@ const HeaderSecond = () => {
   const thirdMessage =
     "Providing a complete set of legal and paralegal services to meet the objectives and needs of attorneys and law firms based in the United States. Our legal professionals understand and completely follow the notion that both intricate and monotonous legal services can be delivered more effectively with scalable, repeatable, well-managed process methodologies.";
   return (
-    <Box style={{ position: "relative" }} ml={28} textAlign={"center"}>
+    <Box style={{ position: "relative" }} textAlign={"center"}>
       {/* Apply styles to the span elements */}
       <Text
         style={{
@@ -37,39 +37,18 @@ const HeaderSecond = () => {
       >
         {secondMessage}
       </Text>
-      <br></br> <br></br>
-      <br></br>
-      <br></br>
-      {/* <Image boxSize="10px," objectFit="cover" src={img} alt="line logo" /> */}
-      <Image
-        boxSize="3px,"
-        objectFit="cover"
-        src={img}
-        alt="line logo"
-        style={{
-          position: "absolute",
-          left: "50%",
-          transform: "translateX(-50%)", // Center the line horizontally
-          top: "40%", // Position the image vertically
-          left: "50%",
-          transform: "translateX(-50%)", // Center the image horizontally
-          borderRadius: "3%", // Make the image appear rounded
-
-        }}
-        />
-      {/* <Box mt={10}> */}
+        <br/>
+      
       <Link to="/appointment">
         <Button
+        w= {'50%'}
           colorScheme="teal"
-          size="sm"
-          position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)" // Center the button both horizontally and vertically
         >
           Start a Free Trial
         </Button>
-        
+        <br/>
+        <br/>
+
         {/* */}
     
       </Link>
@@ -77,7 +56,7 @@ const HeaderSecond = () => {
       {/* </Box> */}
       <Text
         style={{
-          textAlign: "center", // Center the text horizontally
+        //   textAlign: "justify", // Center the text horizontally
           fontSize: "15px",
           fontWeight: "normal", // Set font weight to normal
           fontStyle: "italic", // Set font style to italic
