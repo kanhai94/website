@@ -5,7 +5,7 @@ import NavbarTopFirst from "../Navbar/NavbarTopFirst";
 import Header from "../Header/HeaderFirst";
 import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
-import RemarksComp from "../RemarksComp/RemarksComp";
+import DataShow from "../AchivementDataShow/Datashow";
 import Twocards from "../Twocards/Twocards";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
       <Box w="90%" ml='auto' mr="auto">
         <HeaderSecond />
        <CardFirst />
-        <RemarksComp/>
+        <DataShow/>
       </Box>
       <Box bg="green">
         {/* <Center> */}
