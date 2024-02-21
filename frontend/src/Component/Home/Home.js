@@ -7,6 +7,7 @@ import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
 import RemarksComp from "../RemarksComp/RemarksComp";
 import Twocards from "../Twocards/Twocards";
+import Footer from "../Footer/Footer";
 
 function Home() {
   return (
@@ -15,17 +16,16 @@ function Home() {
       <NavbarTop />
       <NavbarTopFirst />
       <Header />
-      <Box w="90%" ml='auto' mr="auto">
+      <Box w="80%" ml='auto' mr="auto">
         <HeaderSecond />
-       <CardFirst />
-        <RemarksComp/>
+        <CardFirst />
+        <RemarksComp />
       </Box>
-      <Box bg="green">
-        {/* <Center> */}
-        {/* <Twocards/> */}
-
-        {/* </Cente r> */}
-
+      <Box ml="auto" mr="auto">
+        <Twocards />
+      </Box>
+      <Box ml="auto" mr="auto" bg="#1a202d">
+        <Footer />
       </Box>
 
     </Box>
