@@ -5,7 +5,7 @@ import NavbarTopFirst from "../Navbar/NavbarTopFirst";
 import Header from "../Header/HeaderFirst";
 import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
-function RemarksComp() {
+function DataShow() {
   return (
    <Box w={"100%"}  ml='auto' mr={'auto'} >
 {/* <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(250px, 1fr))'> */}
@@ -58,4 +58,4 @@ function RemarksComp() {
   )
 }
 
-export default RemarksComp
+export default DataShow
