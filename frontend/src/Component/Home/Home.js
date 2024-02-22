@@ -15,7 +15,7 @@ function Home() {
       {/* components */}
       {/* <NavbarTop /> */}
       {/* <NavbarTopFirst /> */}
-      <Header />
+      <Header />                                          
       <Box w="80%" ml='auto' mr="auto">
         <HeaderSecond />
         <CardFirst />
