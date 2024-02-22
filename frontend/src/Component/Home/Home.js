@@ -6,7 +6,7 @@ import Header from "../Header/HeaderFirst";
 import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
 import DataShow from "../AchivementDataShow/Datashow";
-import Twocards from "../Twocards/Twocards";
+import CardSecond from  "../HeaderCard/CardSecond";
 
 function Home() {
   return (
@@ -19,12 +19,15 @@ function Home() {
         <HeaderSecond />
        <CardFirst />
         <DataShow/>
+        <CardSecond/>
       </Box>
+      
       <Box bg="green">
         {/* <Center> */}
         {/* <Twocards/> */}
 
         {/* </Cente r> */}
+
 
       </Box>
 
