@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Text, Flex,SimpleGrid} from "@chakra-ui/react";
+import { Box, Button, Text, Flex, SimpleGrid, Center } from "@chakra-ui/react";
 import {
   Card,
   CardBody,
@@ -10,11 +10,12 @@ import {
   Divider,
   ButtonGroup,
 } from "@chakra-ui/react";
+import { MdPersonalInjury } from "react-icons/md";
 
 const CardFirst = () => {
   const header = "Areas of Practice";
   return (
-    
+
     <Box style={{ position: "relative" }} textAlign={"center"}>
       {/* Apply styles to the span elements */}
       <Text
@@ -28,101 +29,87 @@ const CardFirst = () => {
         {header}
       </Text>
       {/* <Flex> */}
-      <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(400px, 1fr))'>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://legal.bolsterlegal.com/wp-content/uploads/2017/06/Personal-Injury-law.png"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      <Card >
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Text>
-            Personal Injury
-          </Text>
-         
-        </CardBody>
-        
-        
-      </Card>
-      {/* </Flex> */}
+      <SimpleGrid spacing={5} templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'} p={6}>
+          <CardBody mt={2} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'}  p={6}>
+          <CardBody mt={5} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'} p={6}>
+          <CardBody mt={5} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'} p={6}>
+          <CardBody mt={5} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'} p={6}>
+          <CardBody mt={5} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+        <Card bg="#1a202d" borderRadius={'0px'}  color="white" align={'center'} p={6}>
+          <CardBody mt={5} >
+          
+
+                <MdPersonalInjury size={100} />
+                <Text>
+                Personal Injury
+              </Text>
+              
+          </CardBody>
+          
+        </Card>
+       
+       
+     
+       
+        {/* </Flex> */}
       </SimpleGrid>
     </Box>
-    
+
 
   );
 };
