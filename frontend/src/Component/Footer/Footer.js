@@ -50,11 +50,11 @@ function Footer() {
                     </CardBody>
 
                 </Card>
-                <Card bg="#1a202d" borderRadius={'0px'} color="white" align={'center'} p={6}>
+                <Card bg="#1a202d" borderRadius={'0px'} color="white" align={'center'} p={6} pr={6}>
                     <CardBody mt={2} >
                         <Flex>
                             <FaWhatsapp size={70} />
-                            <Text mr={1}>
+                            <Text ml={1}>
                                 CALL US NOW !
                                 <br />
 
@@ -133,8 +133,8 @@ function Footer() {
             </Box>
             <Box border={' 1px #2d3444 solid'}></Box>
             {/* Footer Text */}
-            <Box mt={7} fontWeight={600} w={'50%'} mr={'auto'} ml={'auto'} color={'#959696'}  pb={3}>
-            <Flex >
+            <Box mt={7} fontWeight={600} mr={'auto'} ml={'auto'} color={'#959696'} p={4} pb={3}>
+            <Flex flexWrap={'wrap'}  justifyContent={'center'}>
                 <Text>Home</Text>
                 <Spacer/>
                 <Text>Blog</Text>

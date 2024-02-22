@@ -13,8 +13,8 @@ function Home() {
   return (
     <Box>
       {/* components */}
-      <NavbarTop />
-      <NavbarTopFirst />
+      {/* <NavbarTop /> */}
+      {/* <NavbarTopFirst /> */}
       <Header />
       <Box w="80%" ml='auto' mr="auto">
         <HeaderSecond />
