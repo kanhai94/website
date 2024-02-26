@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Center, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Center, Flex, Text, Image,SimpleGrid } from "@chakra-ui/react";
 
 
 
@@ -7,11 +7,11 @@ function Twocards() {
     return (
 
         <Box w={'100%'} ml='auto' mr='auto' bg="black" textAlign={"left"} >
-            
-            <Flex flexWrap={'wrap'} >
+            <Center>
+            <SimpleGrid spacing={5} templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
 
 
-                <Box w={'50%'} bg={'#2d313c'} color="white" pr={10} pl={32}   pb={10}>
+                <Box minW={'50%'} bg={'#2d313c'} color="white" pr={10} pl={32}   pb={10}>
                     <br />
                     <br />
                     <Text fontSize="34px" fontWeight={600}>
@@ -32,7 +32,7 @@ function Twocards() {
                     </Text>
 
                 </Box>
-                <Box w={'50%'} bg={'#f8cf65'} pl={10}  pr={28}   pb={10}>
+                <Box minW={'50%'} bg={'#f8cf65'} pl={10}  pr={28}   pb={10}>
                     <br></br>
                     <br></br>
 
@@ -80,7 +80,8 @@ function Twocards() {
 
 
                 </Box>
-            </Flex>
+            </SimpleGrid>
+            </Center>
         </Box>
 
     )
