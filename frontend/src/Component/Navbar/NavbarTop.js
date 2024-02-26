@@ -7,7 +7,7 @@ import { MdEmail, MdPhone } from 'react-icons/md'; // Importing MdEmail and MdPh
 import { TfiWorld } from "react-icons/tfi"; // Importing TfiWorld icon
 import { useMediaQuery } from 'react-responsive'
 function NavbarTop() {
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 824px)' })
   return (
     <Box fontSize={"15px"} backgroundColor="#000000" width="100%" maxHeight='500px'>
       <Flex justifyContent="space-between" flexDirection={isTabletOrMobile ? 'column' : 'row'} t={10} maxWidth={'80%'} mx="auto" alignItems={'center'}>
