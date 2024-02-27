@@ -18,10 +18,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SocialIcon } from 'react-social-icons'; // Importing SocialIcon component
 import { MdEmail, MdPhone } from 'react-icons/md'; // Importing MdEmail and MdPhone icons
 import { MdArrowForwardIos } from "react-icons/md";
+import { useMediaQuery } from 'react-responsive'
 function Footer() {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
     return (
         <Box bg="#1a202d" color="white" w="100%" >
-            <Box display={'flex'} justifyContent={'space-around'} >
+            <Box display={isTabletOrMobile ? 'block': 'flex'} justifyContent={'space-around'} >
                 <Card w="xs" bg="#1a202d" borderRadius={'0px'} color="white" align={'center'} p={6}>
                     <CardBody mt={2} >
                         <Flex>
