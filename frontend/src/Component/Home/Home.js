@@ -5,10 +5,15 @@ import NavbarTopFirst from "../Navbar/NavbarTopFirst";
 import Header from "../Header/HeaderFirst";
 import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
+
 import RemarksComp from "../RemarksComp/RemarksComp";
 import Twocards from "../Twocards/Twocards";
 import Footer from "../Footer/Footer";
 import { useMediaQuery } from 'react-responsive'
+
+import DataShow from "../AchivementDataShow/Datashow";
+import CardSecond from "../HeaderCard/CardSecond";
+
 
 function Home() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
@@ -17,6 +22,7 @@ function Home() {
       {/* components */}
       <NavbarTop />
       <NavbarTopFirst />
+
       <Header />                                          
       <Box w={isTabletOrMobile ? '100%' : '80%'} ml='auto' mr="auto" p={2}>
       <HeaderSecond />
@@ -30,8 +36,22 @@ function Home() {
 
       <Box ml="auto" mr="auto" bg="#1a202d">
         <Footer />
+
+      <Header />
+      <Box w="80%" ml="auto" mr="auto">
+        <HeaderSecond />
+        <CardFirst />
+        <DataShow />
+        <CardSecond />
+main
       </Box>
 
+      <Box bg="green">
+        {/* <Center> */}
+        {/* <Twocards/> */}
+
+        {/* </Cente r> */}
+      </Box>
     </Box>
   );
 }
