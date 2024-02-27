@@ -6,7 +6,7 @@ import Header from "../Header/HeaderFirst";
 import HeaderSecond from "../HeaderBody";
 import CardFirst from "../HeaderCard/CardFirst";
 
-import RemarksComp from "../RemarksComp/RemarksComp";
+// import RemarksComp from "../RemarksComp/RemarksComp";
 import Twocards from "../Twocards/Twocards";
 import Footer from "../Footer/Footer";
 import { useMediaQuery } from 'react-responsive'
@@ -27,7 +27,7 @@ function Home() {
       <Box w={isTabletOrMobile ? '100%' : '80%'} ml='auto' mr="auto" p={2}>
       <HeaderSecond />
       <CardFirst />
-      <RemarksComp />
+      {/* <RemarksComp /> */}
       </Box>
      
       <Box ml="auto" mr="auto">
@@ -36,14 +36,13 @@ function Home() {
 
       <Box ml="auto" mr="auto" bg="#1a202d">
         <Footer />
-
+</Box>
       <Header />
       <Box w="80%" ml="auto" mr="auto">
         <HeaderSecond />
         <CardFirst />
         <DataShow />
         <CardSecond />
-main
       </Box>
 
       <Box bg="green">
